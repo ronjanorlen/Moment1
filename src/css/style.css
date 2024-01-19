@@ -207,5 +207,9 @@ section img {
         width: 100%;
         height: auto;
     }
+    main {
+        width: 80%;
+        min-height: calc(100vh - 100px);
+    }
 }
 

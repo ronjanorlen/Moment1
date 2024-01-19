@@ -27,8 +27,8 @@
         för att initiera ett nytt projekt. Därefter använder jag kommando code . för att öppna 
         detta i Visual Studio Code. <br>
         <br> I Visual Studio Code har det då skapats en fil som heter package.json som jag
-        konfigurerar. Jag anger source och src/index.html, browserslist för bakåtkompabilitet
-        samt två olika script för att starta projektet från terminalen. 
+        konfigurerar. Jag anger source som src/index.html, browserslist för bakåtkompabilitet
+        samt två olika script för att starta och bygga projektet från terminalen. 
           </p>      
            
           <h2>Installera paket</h2>
@@ -40,7 +40,7 @@
           </p>
         <h2>Bygga webbplats</h2>
         <p>I Visual Studio Code skapar jag en src-mapp som innehåller css-fil, html-filer, 
-            bilder samt JavaScript-fil. <br>
+            bilder samt JavaScript-fil. Dessa struktureras upp i varsin mapp för att hålla ordning.<br>
             <br>Under utveckling av webbplatsen använder jag kommando npm run start för att 
             starta en live server där jag kan se vilka ändringar jag gör. När ändringar sparas
             skapas en mapp som heter dist som blir synlig i Visual Studio Code, där alla färdiga
@@ -52,6 +52,20 @@
             <br>Utvecklingen sker i en separat branch som heter "development" för att 
             skilja på utveckling och publicering. Publicering sker sedan från main-branchen. 
         </p>
+        <h2>Publicera webbplats till Netlify</h2>
+        <p>När jag är klar med min webbplats slår jag ihop min utvecklings-branch med 
+            main-branch genom git checkout main och git merge development. Sedan lägger jag till mitt 
+            projekt på Netlify och publicerar från main-branchen.
+        </p>
+
+        <h2>Automatisering & verktyg</h2>
+        <p>Det som automatiseras är konvertering och optimering av grafikfiler, bakåtkompabilitet,
+             minifiering av CSS- och HTML-filer, transpilering & minifiering av JavaScript-fil 
+        samt kopiering av arbetsfiler till mapp för publicering. <br>
+    <br>
+De verktyg som använts är Visual Studio Code, kommandoterminalen, studiematerial för momentet, Github och Netlify.<br>
+<br>
+Webbplatsen är validerad genom jigsaw.w3.org/css-validator och validator.w3.org.  </p>
     </section>
        
 </main>
