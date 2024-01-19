@@ -1,6 +1,12 @@
 * {
     box-sizing: border-box;
-}   
+}
+#clock {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 2em;
+}
 
 body {
     background-color: #FFFEFE;
@@ -8,70 +14,94 @@ body {
     padding: 0;
     min-height: 100vh;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 main {
     margin-top: 0;
     width: 80%;
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(241, 240, 240);
 }
+
 header {
     width: 100%;
 }
+
 nav {
     text-align: center;
     background-color: rgb(86, 86, 131);
     width: 100%;
     height: 100px;
-  }
-  
-  ul {
+}
+
+ul {
     list-style: none;
     padding: 0;
     display: inline-block;
-  }
-  
-  li {
-    display: inline-block; 
-  }
-  
-  a {
+}
+
+li {
+    display: inline-block;
+}
+
+a {
     text-decoration: none;
     line-height: 60px;
     padding: 35px 40px;
     font-size: 32px;
-    color:rgb(250, 241, 226);
-  }
+    color: rgb(250, 241, 226);
+}
 
-  nav a:hover {
+nav a:hover {
     background-color: rgba(183, 190, 253, 0.349);
-  }
+}
 
-  footer {
+footer {
     background-color: rgb(86, 86, 131);
     width: 100%;
     height: 100px;
     margin-top: auto;
-  }
-  
-  footer p {
+}
+
+footer p {
     text-align: center;
     line-height: 40px;
     padding: 8px 40px;
     font-size: 24px;
-    color:rgb(250, 241, 226);
-  }
+    color: rgb(250, 241, 226);
+}
 
 section {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section h1 {
     font-size: 3em;
     font-weight: bold;
+}
+section h2, section p {
+    text-align: center;
+}
+
+section p {
+    max-width: 90ch;
+    line-height: 1.5;
+}
+section img {
+    border: 2px solid #000;
+    width: 100%;
+    height: auto;
+}
+
+#pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-bottom: 1em;
 }

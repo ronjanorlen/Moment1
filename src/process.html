@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilder</title>
+    <title>Arbetsprocess</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" type="module"></script>
 </head>
@@ -20,17 +20,37 @@
     <main>
     <section>
         <h1>Arbetsprocess</h1>
-        <p>Jag börjar med att skapa en ny katalog i "Den här datorn"
-            som jag döper till "Skola", inuti i den skapas en mapp med namn
-            "Frontendbaserad Webbutveckling" och i den en sista mapp som döps
-            till "Moment 1". <br>
+        
+          <h2>Skapa nytt npm-projekt</h2>
+          <p>Jag skapar en ny katalog lokalt på min dator som döps till "Moment 1",
+        som jag sedan öppnar i kommandoterminalen. I kommandoterminalen anger jag npm init 
+        för att initiera ett nytt projekt. Därefter använder jag kommando code . för att öppna 
+        detta i Visual Studio Code. <br>
+        <br> I Visual Studio Code har det då skapats en fil som heter package.json som jag
+        konfigurerar. Jag anger source och src/index.html, browserslist för bakåtkompabilitet
+        samt två olika script för att starta projektet från terminalen. 
+          </p>      
+           
+          <h2>Installera paket</h2>
+          <p>Jag installerar sedan paketet Parcel med kommando npm install parcel --save-dev
+            för att spara i utvecklings-läget. När paketet är installerat skapas en mapp
+            som heter node_modules/ som innehåller massor av olika paket för att hantera olika 
+            åtgärder som sker på webbplatsen i bakgrunden. För att inte versionshantera denna fil 
+            lägger jag in node_modules/ i .gitignore-filen. 
+          </p>
+        <h2>Bygga webbplats</h2>
+        <p>I Visual Studio Code skapar jag en src-mapp som innehåller css-fil, html-filer, 
+            bilder samt JavaScript-fil. <br>
+            <br>Under utveckling av webbplatsen använder jag kommando npm run start för att 
+            starta en live server där jag kan se vilka ändringar jag gör. När ändringar sparas
+            skapas en mapp som heter dist som blir synlig i Visual Studio Code, där alla färdiga
+            filer hamnar och optimeras vid testkörning. "dist"-katalogen samt .parcel-cache läggs också
+            in i .gitignore-filen för att exkluderas vid versionshantering. <br>
             <br>
-            Sedan navigerar jag in i "Moment 1"-katalogen i kommandoterminalen och 
-            skapar ett nytt npm-projekt med kommandot npm init. Då dyker en guide upp i 
-            kommandoterminalen som jag trycker mig igenom, bekräftar, och öppnar sedan 
-            denna katalog i Visual Studio Code med kommando code . . <br>
-            <br>
-            I Visual Studio Code har det nu skapats en package.json-fil
+            Jag gör även commits under tiden jag utvecklar, då använder jag mig utav kommandona 
+            git add, git commit -m och git push. <br>
+            <br>Utvecklingen sker i en separat branch som heter "development" för att 
+            skilja på utveckling och publicering. Publicering sker sedan från main-branchen. 
         </p>
     </section>
        
